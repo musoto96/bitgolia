@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitgolia</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Begin Charts  -->
+
+    <!-- Portfolio timeline -->
+    <script src="js/data/timelineData.js"></script>  
+    <script src="js/timeline.js"></script>  
+
+    <!-- Balance table -->
+    <script src="js/data/balanceTableData.js"></script>  
+    <script src="js/balanceTable.js"></script>  
+
+    <!-- Balance table -->
+    <script src="js/data/assetChartData.js"></script>  
+    <script src="js/assetChart.js"></script>  
+    <script>
+      window.onresize = redraw;
+
+      function redraw() {
+        google.charts.setOnLoadCallback(drawTimeline);
+        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawTable);
+      };
+    </script>  
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End Charts  -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Bitgolia</h1>
+        <h3 id="subtitle">Performance report</h3>
+      </div>
+      <section class="report">
+        <div class="report-element" id="portfolio_timeline" style="height: 500;"></div>
+        <div class="separator"></div>
+        <div class="report-element" id="balance_table" style="height: 500;"></div>
+        <div class="separator"></div>
+        <div class="report-element" id="asset_chart" style="height: 500;"></div>
+      </section>
+      <div class="footer">
+        <h4 id="h-text">Bitgolia all rights reserved</h4>
+      </div>
+    </div>
+  </body>
+</html>
+
