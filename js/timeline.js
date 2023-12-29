@@ -15,20 +15,20 @@ function drawTimeline() {
     },
     title: 'PNL',
     titleTextStyle: {
-      color: 'darkred',
+      color: 'black',
       fontName: 'Verdana',
       fontSize: 16, 
       bold: true,
       italic: false
     },
     curveType: 'function',
-    height: 500,
+    height: '100%',
     width: '100%',
     vAxis: { format: 'percent', gridlines: { count: 0 } },
     hAxis: { gridlines: { count: 0 }, slantedText: true , slantedTextAngle: 45 },//, textStyle : { fontSize: 12 } },
     series: { 
       0: { 
-        color: 'darkred', 
+        color: '#2E4053', 
         opacity: 0.7, 
         lineWidth: 2 
       }

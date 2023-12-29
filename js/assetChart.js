@@ -12,7 +12,7 @@ function drawChart() {
     },
     title: 'Assets',
     titleTextStyle: {
-      color: 'darkred',
+      color: 'black',
       fontName: 'Verdana',
       fontSize: 16, 
       bold: true,
