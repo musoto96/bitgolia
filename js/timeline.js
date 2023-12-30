@@ -13,7 +13,7 @@ function drawTimeline() {
       duration: 1000,
       easing: 'out',
     },
-    title: 'PNL',
+    title: 'XBt Balance',
     titleTextStyle: {
       color: 'black',
       fontName: 'Verdana',
@@ -24,7 +24,7 @@ function drawTimeline() {
     curveType: 'function',
     height: '100%',
     width: '100%',
-    vAxis: { format: 'percent', gridlines: { count: 0 } },
+    vAxis: { format: 'percent', gridlines: { minspacing: 40 }, slantedText: true , slantedTextAngle: 45 },
     hAxis: { gridlines: { count: 0 }, slantedText: true , slantedTextAngle: 45 },//, textStyle : { fontSize: 12 } },
     series: { 
       0: { 
@@ -37,7 +37,7 @@ function drawTimeline() {
       //trigger: 'none'
     //}, 
     backgroundColor: 'white',
-    chartArea: {width: '80%'},
+    chartArea: {width: '75%'},
     legend: { position: 'bottom' }, 
   };
 

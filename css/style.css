@@ -81,12 +81,12 @@ html {
 }
 
 .report__element {
+  margin: 4rem 0rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin: 4rem 0rem;
-  padding: 2rem;
   box-shadow: 2px 2px 5px 5px #E5E8E8;
 }
 
@@ -96,14 +96,39 @@ html {
 
 #portfolio_timeline {
   max-width: 1380px;
-  min-height: 500px;
+  min-height: 550px;
 }
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer img {
   height: 14px;
   padding: 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    padding: 2rem 1rem;
+  }
+
+  .wrapper__blog {
+    align-self: end;
+    margin-right: 2rem;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
+
+  #portfolio_timeline {
+    min-height: 450px;
+  }
+
+  .report__element {
+    margin: 3rem 0rem;
+    padding: 0rem;
+  }
 }
