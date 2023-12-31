@@ -158,11 +158,11 @@ html {
 }
 
 .footer img {
-  height: 14px;
+  height: 12px;
   padding: 0 5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .nav {
     padding: 2rem 1rem;
   }
