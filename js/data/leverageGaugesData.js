@@ -1,0 +1,1 @@
+var leverageGaugesData = [ 'Leverage', 0 ];

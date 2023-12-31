@@ -15,7 +15,7 @@ html {
 }
 
 .nav {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   flex-direction: column;
   max-width: fit-content;
@@ -53,14 +53,14 @@ html {
 
 
 .wrapper {
-  padding: 2rem 4rem;
+  padding: 0.5rem 4rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .wrapper__blog {
-  align-self: start;
+  align-self: end;
   margin-left: 2rem;
 }
 
@@ -80,28 +80,81 @@ html {
   width: 100%;
 }
 
-.report__element {
-  margin: 4rem 0rem;
+.section {
+  /*
   padding: 2rem;
+  box-shadow: 2px 2px 5px 5px #E5E8E8;
+  */
+  margin: 4rem 0rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  box-shadow: 2px 2px 5px 5px #E5E8E8;
 }
 
-#portfolio_timeline, #balance_table, #asset_chart{
-  width: 100%;
+.subsection {
+  display: flex;
+  margin: 1rem 0rem;
 }
 
-#portfolio_timeline {
-  max-width: 1380px;
-  min-height: 550px;
+.subsection__panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.subsection__panel__leverage {
+  display: flex;
+}
+
+.dashboard {
+  display: block;
+  margin: 0.5rem 0rem;
+}
+
+.figure-wrapper { 
+  border: solid;
+  border-color: #E5E8E8;
+  border-width: thin;
+  flex: 1;
+  display: flex;
+}
+
+.figure {
+  margin: auto;
+  flex-grow: 1;
+}
+
+.table .figure {
+  margin: 0;
+}
+
+#current_position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#current_position h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#leverageGauges {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolioTimeline {
+  max-width: 900px;
+  min-height: 500px;
 }
 
 .footer {
+  margin-bottom: 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  font-size: 12px;
 }
 
 .footer img {
@@ -115,20 +168,24 @@ html {
   }
 
   .wrapper__blog {
-    align-self: end;
     margin-right: 2rem;
   }
 
   .wrapper {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   #portfolio_timeline {
-    min-height: 450px;
+    min-height: 350px;
   }
 
-  .report__element {
-    margin: 3rem 0rem;
-    padding: 0rem;
+  .subsection {
+    flex-direction: column;
+    margin: 1rem 0rem;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }

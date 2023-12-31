@@ -19,7 +19,15 @@
 
     <!-- Portfolio timeline -->
     <script src="js/data/timelineData.js"></script>  
-    <script src="js/timeline.js"></script>  
+    <script src="js/portfolioTimeline.js"></script>  
+
+    <!-- Leverage gauge -->
+    <script src="js/data/leverageGaugesData.js"></script>  
+    <script src="js/leverageGauges.js"></script>  
+
+    <!-- Deleverage -->
+    <script src="js/data/leverageCurveData.js"></script>  
+    <script src="js/leverageCurve.js"></script>  
 
     <!-- Balance table -->
     <script src="js/data/balanceTableData.js"></script>  
@@ -33,8 +41,10 @@
 
       function redraw() {
         google.charts.setOnLoadCallback(drawTimeline);
-        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawGauges);
+        google.charts.setOnLoadCallback(drawCurve);
         google.charts.setOnLoadCallback(drawTable);
+        google.charts.setOnLoadCallback(drawPieChart);
       };
     </script>  
     <link rel="stylesheet" href="css/style.css">
@@ -62,24 +72,66 @@
       </div>
 
       <div class="report">
-        <div class="report__element">
-          <div id="portfolio_timeline"></div>
-        </div>
-        <div class="report__element">
-          <div id="balance_table"></div>
-        </div>
-        <div class="report__element">
-          <div id="asset_chart"></div>
+        <div class="section dashboard">
+          <div class="subsection">
+            <div class="figure-wrapper">
+              <div class="figure">
+                <div id="portfolioTimeline"></div>
+              </div>
+            </div>
+
+            <div class="subsection__panel">
+              <div class="figure-wrapper">
+                <div class="figure">
+                  <div id="current_position">
+                    <h1 id="position"></h1>
+                    <p id="symbol"></p>
+                    <p id="pnl"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subsection__panel__leverage">
+                <div class="figure-wrapper">
+                  <div class="figure">
+                    <div id="leverageCurve"></div>
+                  </div>
+                </div>
+
+                <div class="figure-wrapper">
+                  <div class="figure">
+                    <div id="leverageGauges"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <div class="figure-wrapper table">
+              <div class="figure">
+                <div id="balance_table"></div>
+              </div>
+            </div>
+            <div class="figure-wrapper">
+              <div class="figure">
+                <div id="asset_chart"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footer">
-        <p>Data provided by</p>
+        <p>This automated report was generated with data provided by</p>
         <a href="https://www.bitmex.com" target="_blank"><img src="assets/bitmex.png"/></a>
         <p>visit <a href="https://www.bitmex.com/our-api" target="_blank">BitMEX API</a> for more information.<p>
       </div>
     </div>
 
   </body>
+  <!-- Position -->
+  <script src="js/data/positionData.js"></script>  
+  <script src="js/position.js"></script>  
 </html>
 

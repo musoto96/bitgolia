@@ -37,11 +37,10 @@ function drawTimeline() {
       //trigger: 'none'
     //}, 
     backgroundColor: 'white',
-    chartArea: {width: '75%'},
     legend: { position: 'bottom' }, 
   };
 
-  var chart = new google.visualization.LineChart(document.getElementById('portfolio_timeline'));
+  var chart = new google.visualization.LineChart(document.getElementById('portfolioTimeline'));
 
   chart.draw(data, google.charts.Line.convertOptions(options));
 }
