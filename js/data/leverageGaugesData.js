@@ -1,1 +1,1 @@
-var leverageGaugesData = [ 'Leverage', 0 ];
+var leverageGaugesData = [ 'Leverage', NaN ];

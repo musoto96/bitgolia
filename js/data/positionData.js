@@ -1,1 +1,1 @@
-var positionData = { side: "none", symbol: "-", currency: "-", unrealisedPnlPcnt: 0.0 };
+var positionData = { side: "none", symbol: "XBTUSD", currency: "XBt", unrealisedPnlPcnt: 0 };

@@ -1,1 +1,1 @@
-var leverageCurveData = { exposure: "none", zScore: 99 };
+var leverageCurveData = { exposure: "none", zScore: 99.000 };
